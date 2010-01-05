@@ -1,0 +1,46 @@
+# .gitignore for NUbot
+
+# We don't want build files in the repo
+/Build/NAO/*
+/Build/NAOWebots/*
+/Build/Cycloid/*
+# We don't want to include Xcode project files
+/Build/jwalk2.build
+/Build/robocup.build
+*.xcodeproj
+*.build
+bin/*
+
+# We don't oxygen files in the repp
+/Documentation
+/Doc
+
+# Python Ignores:
+#we don't want to include .pyc files
+*.pyc
+
+# Common Ignores
+*.*~
+*.o
+
+*motionconfig.h
+*walkconfig.h
+targetconfig.h
+/Tools/debug.h
+*.old*
+
+# External files from archives
+/NUview/gl/*
+/NUview/diagona/*
+/Tools/zlib/*
+
+# ignore Qt builds
+/NUview/debug/*
+/NUview/release/*
+*.Debug
+*.Release
+/NUview/Makefile
+/NUview/NUview.pro.user
+/NUview/NU*.app
+/NUview/moc_*
+/NUview/autosave.lut
